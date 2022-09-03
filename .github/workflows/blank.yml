@@ -3,7 +3,8 @@
 name: jackyll
 
 # Controls when the workflow will run
-on:echo
+on:photo
+
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:unread messages 
     branches: [ "main" ]
@@ -11,7 +12,7 @@ on:echo
     branches:all accounts
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:echo/delta
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+    steps:recover all messages and images on devices 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
